@@ -35,3 +35,19 @@ for ( let num of numbers){
 }
 
 console.log(recurrenceObj)
+
+
+// creating array from key
+let data = {
+    name:"anil",
+    age:30,
+    email:"anil@gmail.com"
+}
+
+let arrayOfData = []
+
+for(let i of Object.keys(data)){
+    arrayOfData.push(i)
+}
+
+console.log(arrayOfData)
