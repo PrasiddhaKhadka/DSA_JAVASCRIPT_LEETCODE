@@ -1,14 +1,12 @@
 var map = function (arr, fn) {
-    var result = []
+    const result = [];
 
-    for(let i = 0; i< arr.length; i++){
+    for (let i = 0; i < arr.length; i++) {
         result.push(fn(arr[i], i));
     }
 
-    return result
-
-}
-
+    return result;
+};
 
 function plusone(n) {
     return n + 1;
