@@ -13,6 +13,6 @@ var findMaxConsecutiveOnes = function(nums) {
 
 
 
-nums = [1,1,0,1,1,1]
+let nums = [1,1,0,1,1,1]
 
 findMaxConsecutiveOnes(nums)

@@ -1,19 +1,22 @@
 var compose = function(functions) {
 
     return function(x) {
-        for(let i of functions){
-            console.log('Here')
-            console.log(i(5))
-        }
-        
-        console.log(x)    
 
+        let val = x;
+        for(let i=functions.length; i>0; i--)
+        {
+            let fun = functions[i-1]
+            val = fun(val)
+            // console.log(val)
+        }
+        return val
 
     }
 
 };
 
 
-const fn = compose([x => x + 1, x => 2 * x])
+const fn = compose([x => x + 1, x => x * x, x => 2 * x])
 
-fn(10);
+const newVal = fn(4);
+console.log(newVal)
